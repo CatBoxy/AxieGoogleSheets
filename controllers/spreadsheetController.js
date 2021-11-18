@@ -11,7 +11,7 @@ const spreadsheetController = {
     const googleRows = await mmrArray.rows(range);
 
     const auth = new google.auth.GoogleAuth({
-      keyFile: 'credentials.json',
+      keyFile: 'google-credentials.json',
       scopes: 'https://www.googleapis.com/auth/spreadsheets',
     });
 
@@ -44,7 +44,7 @@ const spreadsheetController = {
   copyPreviousValues: async () => {
     try {
     const auth = new google.auth.GoogleAuth({
-      keyFile: 'credentials.json',
+      keyFile: 'google-credentials.json',
       scopes: 'https://www.googleapis.com/auth/spreadsheets',
     });
 

@@ -7,7 +7,7 @@ const cellFetch = {
   copyCell: async (cell) => {
     try {
     const auth = new google.auth.GoogleAuth({
-      keyFile: 'credentials.json',
+      keyFile: 'google-credentials.json',
       scopes: 'https://www.googleapis.com/auth/spreadsheets',
     });
 

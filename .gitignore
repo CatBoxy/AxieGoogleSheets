@@ -76,4 +76,4 @@ jspm_packages
 # Heroku Env
 .env
 
-credentials.json
+google-credentials.json
