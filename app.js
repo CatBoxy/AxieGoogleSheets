@@ -7,8 +7,8 @@ const port = process.env.PORT;
 const app = express();
 
 const firstColumn = new schedule.RecurrenceRule();
-    firstColumn.hour = 11;
-    firstColumn.minute = 18;
+    firstColumn.hour = 23;
+    firstColumn.minute = 30;
     firstColumn.tz = 'America/Argentina/Buenos_Aires';
 
     const columnCopyJob = schedule.scheduleJob(firstColumn, async() =>{
@@ -16,8 +16,8 @@ const firstColumn = new schedule.RecurrenceRule();
     });
 
 const firstRule = new schedule.RecurrenceRule();
-    firstRule.hour = 11;
-    firstRule.minute = 19;
+    firstRule.hour = 00;
+    firstRule.minute = 00;
     firstRule.tz = 'America/Argentina/Buenos_Aires';
 
     const job1 = schedule.scheduleJob(firstRule, async() =>{
@@ -26,8 +26,8 @@ const firstRule = new schedule.RecurrenceRule();
     });
 
 const secondRule = new schedule.RecurrenceRule();
-    secondRule.hour = 11;
-    secondRule.minute = 20;
+    secondRule.hour = 15;
+    secondRule.minute = 00;
     secondRule.tz = 'America/Argentina/Buenos_Aires';
 
     const job2 = schedule.scheduleJob(secondRule, async() =>{
@@ -36,8 +36,8 @@ const secondRule = new schedule.RecurrenceRule();
     });
 
 const thirdRule = new schedule.RecurrenceRule();
-    thirdRule.hour = 11;
-    thirdRule.minute = 21;
+    thirdRule.hour = 18;
+    thirdRule.minute = 00;
     thirdRule.tz = 'America/Argentina/Buenos_Aires';
 
     const job3 = schedule.scheduleJob(thirdRule, async() =>{
@@ -46,8 +46,8 @@ const thirdRule = new schedule.RecurrenceRule();
     });
 
 const fourthRule = new schedule.RecurrenceRule();
-    fourthRule.hour = 11;
-    fourthRule.minute = 22;
+    fourthRule.hour = 21;
+    fourthRule.minute = 00;
     fourthRule.tz = 'America/Argentina/Buenos_Aires';
 
     const job4 = schedule.scheduleJob(fourthRule, async() =>{
