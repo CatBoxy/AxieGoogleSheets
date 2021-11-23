@@ -3,12 +3,19 @@ const spreadsheetController = require('./controllers/spreadsheetController');
 const schedule = require('node-schedule');
 const express = require("express");
 const port = process.env.PORT;
+const axios = require('axios');
 
 const app = express();
 
+const callFunction = () => {
+  let response = await axios.get(`https://game-api.axie.technology/stats`);
+  let axieData = response.data;
+  console.log(axieData);
+};
+
 setInterval(() =>{
-	console.log("app funcionando")
-}, 420000);
+	callFunction();
+}, 300000);
 
 const firstColumn = new schedule.RecurrenceRule();
     firstColumn.hour = 23;
