@@ -41,7 +41,7 @@ const secondRule = new schedule.RecurrenceRule();
 
 const thirdRule = new schedule.RecurrenceRule();
     thirdRule.hour = 18;
-    thirdRule.minute = 34;
+    thirdRule.minute = 38;
     thirdRule.tz = 'America/Argentina/Buenos_Aires';
 
     const job3 = schedule.scheduleJob(thirdRule, async() =>{
