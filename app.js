@@ -7,7 +7,7 @@ const axios = require('axios');
 
 const app = express();
 
-const callFunction = () => {
+const callFunction = async () => {
   let response = await axios.get(`https://game-api.axie.technology/stats`);
   let axieData = response.data;
   console.log(axieData);
