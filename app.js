@@ -6,6 +6,10 @@ const port = process.env.PORT;
 
 const app = express();
 
+setInterval(() =>{
+	console.log("app funcionando")
+}, 420000);
+
 const firstColumn = new schedule.RecurrenceRule();
     firstColumn.hour = 23;
     firstColumn.minute = 30;

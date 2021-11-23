@@ -5,10 +5,6 @@ require('dotenv').config({ path: filePath});
 const {google} = require('googleapis');
 const mmrArray = require('./mainController');
 
-setInterval(() =>{
-	console.log("app funcionando")
-}, 420000);
-
 const spreadsheetController = {
   update: async (range) => {
     try {
